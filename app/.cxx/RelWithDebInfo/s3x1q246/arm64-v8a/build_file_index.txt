@@ -1,0 +1,1 @@
+D:\Work\OpenBachelor\OpenBachelorC\android\app\src\main\jni\CMakeLists.txt

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Dark-first palette. The app is used next to a running game, so a dim
+        surface with a single accent keeps the session readable at a glance
+        without glowing in the dark.
+    -->
+
+    <!-- surfaces -->
+    <color name="bg">#0F1115</color>
+    <color name="surface">#171A21</color>
+    <color name="surface_alt">#1E222B</color>
+    <color name="stroke">#2A2F3A</color>
+
+    <!-- text -->
+    <color name="text">#E8EAF0</color>
+    <color name="text_dim">#98A0B0</color>
+    <color name="text_faint">#6B7280</color>
+
+    <!-- brand + states -->
+    <color name="accent">#4F8DF7</color>
+    <color name="accent_dim">#2E4E8F</color>
+    <color name="ok">#3DD68C</color>
+    <color name="warn">#F0B429</color>
+    <color name="err">#F0616D</color>
+
+    <!-- log levels -->
+    <color name="log_meta">#6B7280</color>
+    <color name="log_info">#A8B2C4</color>
+    <color name="log_ok">#3DD68C</color>
+    <color name="log_warn">#F0B429</color>
+    <color name="log_err">#F0616D</color>
+</resources>

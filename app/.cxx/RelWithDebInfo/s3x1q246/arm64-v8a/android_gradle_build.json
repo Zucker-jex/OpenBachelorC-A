@@ -1,0 +1,38 @@
+{
+  "buildFiles": [
+    "D:\\Work\\OpenBachelor\\OpenBachelorC\\android\\app\\src\\main\\jni\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "D:\\android-toolchain\\sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "D:\\Work\\OpenBachelor\\OpenBachelorC\\android\\app\\.cxx\\RelWithDebInfo\\s3x1q246\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "D:\\android-toolchain\\sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "D:\\Work\\OpenBachelor\\OpenBachelorC\\android\\app\\.cxx\\RelWithDebInfo\\s3x1q246\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "obc::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "obc",
+      "output": "D:\\Work\\OpenBachelor\\OpenBachelorC\\android\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\s3x1q246\\obj\\arm64-v8a\\libobc.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "D:\\android-toolchain\\sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "D:\\android-toolchain\\sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

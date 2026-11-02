@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!--
+        Needed to write the OBS compatibility package into Download/, which is
+        the point of deploying it: those files must be reachable by a file
+        manager and by Termux.
+
+        It is NOT used for the dump feature - this permission cannot read
+        another app's Android/data directory (an Android 11+ platform
+        restriction), so that path goes through root instead.
+    -->
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <!-- Needed on Android 11+ to resolve the patched game package by name. -->
+    <queries>
+        <package android:name="com.zucker.arknights" />
+        <package android:name="com.hypergryph.arknights" />
+    </queries>
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OpenBachelorC"
+        tools:targetApi="35">
+
+        <!--
+            The Gadget is built with interaction.on_load = "wait", so the game
+            blocks until this client attaches. The client process therefore has
+            to survive backgrounding: it runs as a foreground service.
+        -->
+        <service
+            android:name=".ObcService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Keeps the live instrumentation session with the game process alive." />
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

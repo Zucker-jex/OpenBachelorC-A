@@ -1,0 +1,7 @@
+[
+{
+  "directory": "D:/Work/OpenBachelor/OpenBachelorC/android/app/.cxx/RelWithDebInfo/s3x1q246/arm64-v8a",
+  "command": "D:\\android-toolchain\\sdk\\ndk\\27.1.12297006\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android26 --sysroot=D:/android-toolchain/sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dobc_EXPORTS -ID:/Work/OpenBachelor/OpenBachelorC/android/app/src/main/jni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -g -DNDEBUG -fPIC -ffunction-sections -fdata-sections -fvisibility=hidden -Wno-unused-parameter -std=gnu11 -o CMakeFiles\\obc.dir\\obc_jni.c.o -c D:\\Work\\OpenBachelor\\OpenBachelorC\\android\\app\\src\\main\\jni\\obc_jni.c",
+  "file": "D:\\Work\\OpenBachelor\\OpenBachelorC\\android\\app\\src\\main\\jni\\obc_jni.c"
+}
+]

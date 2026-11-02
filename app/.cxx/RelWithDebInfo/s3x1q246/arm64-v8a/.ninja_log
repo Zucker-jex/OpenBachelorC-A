@@ -1,0 +1,6 @@
+# ninja log v5
+0	276	8152379278423618	CMakeFiles/obc.dir/obc_jni.c.o	e48b881d6441f96e
+279	990	8152379284460548	D:/Work/OpenBachelor/OpenBachelorC/android/app/build/intermediates/cxx/RelWithDebInfo/s3x1q246/obj/arm64-v8a/libobc.so	5fd46ade8ab39dd4
+3	417	8152402436670474	D:/Work/OpenBachelor/OpenBachelorC/android/app/build/intermediates/cxx/RelWithDebInfo/s3x1q246/obj/arm64-v8a/libobc.so	ce57d4782a47cf1c
+4	522	8152434141245607	CMakeFiles/obc.dir/obc_jni.c.o	e48b881d6441f96e
+524	1024	8152434145515066	D:/Work/OpenBachelor/OpenBachelorC/android/app/build/intermediates/cxx/RelWithDebInfo/s3x1q246/obj/arm64-v8a/libobc.so	ce57d4782a47cf1c

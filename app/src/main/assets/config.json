@@ -1,0 +1,25 @@
+{
+    "host": "10.0.0.1",
+    "port": 8443,
+    "multiplayer_port": 8543,
+    "icebreaker_port": 8544,
+    "no_proxy": false,
+    "attach_pc": false,
+    "frida_port": 9443,
+    "gadget_port": 10443,
+    "use_su": false,
+    "use_gadget": true,
+    "use_emulated_realm": false,
+    "no_spawn": true,
+    "enable_extra": true,
+    "extra_config": {
+        "pause_deploy": true,
+        "3x_speed": true,
+        "vision": true,
+        "vision_font_size": 22
+    },
+    "enable_trainer": true,
+    "trainer_config": {
+        "dump_json": false
+    }
+}
